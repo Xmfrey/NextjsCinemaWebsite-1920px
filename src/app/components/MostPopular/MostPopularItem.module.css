@@ -1,0 +1,49 @@
+.mostPopularItem__wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 559px;
+}
+
+.mostPopularItem__top {
+  font-family: "Archivo", sans-serif;
+  color: #09090c;
+  position: absolute;
+  width: 246px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 360px;
+  font-style: italic;
+  font-weight: 900;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+}
+
+/* .mostPopularItem__opacity {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 398px;
+  height: 100%;
+  border-radius: 32px;
+  background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+  transition: opacity 0.2s linear;
+  opacity: 0;
+} */
+
+.mostPopularItem__wrapper:hover .mostPopularItem__opacity {
+  opacity: 1;
+}
+
+.newItem__image {
+  display: block;
+  padding: 4px;
+  margin-left: auto;
+  border-radius: 32px;
+  position: relative;
+  z-index: 10;
+}

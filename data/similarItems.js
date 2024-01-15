@@ -1,0 +1,51 @@
+export const similarItems = [
+  {
+    type: "movie",
+    rating: 9.1,
+    posterPath: "/similar/similar-1.jpg",
+    posterAlt: "8 подруг оушена",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 9.2,
+    posterPath: "/similar/similar-2.jpg",
+    posterAlt: "энканто",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 8.9,
+    posterPath: "/similar/similar-3.jpg",
+    posterAlt: "красное уведомление",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 9.0,
+    posterPath: "/similar/similar-4.jpg",
+    posterAlt: "синий жук",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 9.3,
+    posterPath: "/similar/similar-5.jpg",
+    posterAlt: "мэр кингстауна",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 8.7,
+    posterPath: "/similar/similar-6.jpg",
+    posterAlt: "пять ночей с фредди",
+    route: "#",
+  },
+  {
+    type: "movie",
+    rating: 8.9,
+    posterPath: "/similar/similar-7.jpg",
+    posterAlt: "балерина",
+    route: "#",
+  },
+];

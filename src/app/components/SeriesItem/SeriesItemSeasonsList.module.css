@@ -1,0 +1,53 @@
+.SeriesItemSeasonsList {
+  margin-bottom: 60px;
+}
+
+.SeriesItemSeasonsList__title {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin-bottom: 24px;
+}
+
+.SeriesItemSeasonsList__seasons {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.SeriesItemSeasonsList__seasonsButtons {
+  color: #bababa;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #232326;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.SeriesItemSeasonsList__seasonsButtons:hover {
+  color: #09090c;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  background-color: #fff;
+}
+
+.active {
+  color: #09090c;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  background-color: #fff;
+}
+
+.SeriesItemSeasonsList__Name {
+  font-size: 40px;
+  font-weight: 700;
+}

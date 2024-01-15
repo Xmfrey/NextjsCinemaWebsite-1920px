@@ -1,0 +1,24 @@
+.SeriesItemSeasonItem {
+  display: inline-block;
+}
+
+.SeriesItemSeasonItem__image {
+  border-radius: 32px;
+  margin-bottom: 20px;
+}
+
+.SeriesItemSeasonItem__timeLine {
+  height: 8px;
+  margin-bottom: 12px;
+}
+
+.SeriesItemSeasonItem__episodeNumber {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.SeriesItemSeasonItem__time {
+  color: #bababa;
+  font-size: 24px;
+}

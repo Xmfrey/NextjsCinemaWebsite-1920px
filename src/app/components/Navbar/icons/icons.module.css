@@ -1,0 +1,11 @@
+.hov * {
+  transition: fill 0.2s ease-in-out;
+}
+
+.hov:hover * {
+  fill: #5896ff;
+}
+
+.active * {
+  fill: #5896ff;
+}

@@ -1,0 +1,56 @@
+.button {
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  backdrop-filter: none;
+  transform: scale(1.01);
+}
+
+.button * {
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover * {
+  fill: #5896ff;
+}
+
+.small {
+  padding: 24px 34px;
+  line-height: 32px;
+}
+
+.middle {
+  padding: 24px 60px;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.black {
+  background: var(
+    --gradient-white-50,
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.13) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    )
+  );
+  backdrop-filter: blur(10px);
+}
+
+.disabled {
+  pointer-events: none;
+}

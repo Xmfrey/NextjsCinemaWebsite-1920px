@@ -1,0 +1,9 @@
+.SimilarList {
+  margin-bottom: 60px;
+}
+
+.SimilarList__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}

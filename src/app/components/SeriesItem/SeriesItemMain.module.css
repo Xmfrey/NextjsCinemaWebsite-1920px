@@ -1,0 +1,41 @@
+.seriesItemMain {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.seriesItemMain__imageName {
+  margin-bottom: 32px;
+}
+
+.seriesItemMain__infoBlock {
+  width: 735px;
+}
+
+.seriesItemMain__infoGroup {
+  display: inline-flex;
+  align-items: center;
+  font-size: 28px;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.seriesItemMain__infoGroup span:first-child {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.seriesItemMain__infoDesc {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 112px;
+}
+
+.seriesItemMain__buttonsGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}

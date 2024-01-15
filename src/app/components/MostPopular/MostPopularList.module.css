@@ -1,0 +1,23 @@
+.mostPopularList {
+  padding-left: 215px;
+  margin-bottom: 200px;
+}
+
+.mostPopularList__Name {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.mostPopularList__Name span {
+  font-size: 52px;
+  font-style: italic;
+  font-weight: 900;
+  margin-right: 20px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

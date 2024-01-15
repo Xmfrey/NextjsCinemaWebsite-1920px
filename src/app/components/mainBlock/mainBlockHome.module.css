@@ -1,0 +1,31 @@
+.mainBlock {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.mainBlock__innerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.mainBlock__Info {
+  width: 886px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.mainBlock__Info > *:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.mainBlockInfo__desc {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.mainBlockInfo__buttonGroup {
+  display: inline-flex;
+  gap: 24px;
+}

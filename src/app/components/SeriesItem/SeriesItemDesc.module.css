@@ -1,0 +1,18 @@
+.SeriesItemDesc {
+  max-width: 1640px;
+  margin-bottom: 60px;
+}
+
+.SeriesItemDesc > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.SeriesItemDesc__title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.SeriesItemDesc__info {
+  font-size: 30px;
+  padding-right: 12px;
+}

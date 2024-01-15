@@ -1,0 +1,8 @@
+.nav__icon * {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__icon:hover * {
+  fill: #6a11cb;
+  transition: all 0.2s ease-in-out;
+}
