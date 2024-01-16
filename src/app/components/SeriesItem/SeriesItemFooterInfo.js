@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SeriesItemFooterInfo.module.css";
 import Link from "next/link";
+import ChipQuality from "../Chips/ChipQuality";
 
 const SeriesItemFooterInfo = ({
   premiere,
@@ -45,6 +46,7 @@ const SeriesItemFooterInfo = ({
             <div className={styles.SeriesItemFooterInfo__fieldContent}>
               {genre.map((gen) => (
                 <Link
+                  key={gen.genreName}
                   className={styles.SeriesItemFooterInfo__fieldGenreLink}
                   href={gen.genreRoute}
                 >
@@ -67,9 +69,8 @@ const SeriesItemFooterInfo = ({
             <div className={styles.SeriesItemFooterInfo__fieldName}>
               Качество
             </div>
-            <div className={styles.SeriesItemFooterInfo__fieldContentChip}>
-              {quality}
-            </div>
+
+            <ChipQuality>{quality}</ChipQuality>
           </div>
         </div>
       </div>

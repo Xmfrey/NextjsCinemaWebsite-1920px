@@ -1,5 +1,6 @@
 export const newItems = [
   {
+    id: 1,
     name: "Синий жук",
     type: "movie",
     rating: 10,
@@ -8,6 +9,7 @@ export const newItems = [
     route: "#",
   },
   {
+    id: 2,
     name: "Домашняя игра",
     type: "movie",
     rating: 6.9,
@@ -16,6 +18,7 @@ export const newItems = [
     route: "#",
   },
   {
+    id: 3,
     name: "Салют 7",
     type: "movie",
     rating: 5.8,
@@ -24,6 +27,7 @@ export const newItems = [
     route: "#",
   },
   {
+    id: 4,
     name: "Поймай меня, если сможешь",
     type: "movie",
     rating: 7.0,

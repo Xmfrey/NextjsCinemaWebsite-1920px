@@ -13,7 +13,7 @@ const SimilarList = () => {
 
       <Swiper spaceBetween={24} slidesPerView={6} grabCursor={true}>
         {similarItems.map((item) => (
-          <SwiperSlide key={item.posterPath}>
+          <SwiperSlide key={item.id}>
             <SimilarItem
               posterPath={item.posterPath}
               posterAlt={item.posterAlt}

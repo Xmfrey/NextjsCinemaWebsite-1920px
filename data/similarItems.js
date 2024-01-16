@@ -1,5 +1,6 @@
 export const similarItems = [
   {
+    id: 1,
     type: "movie",
     rating: 9.1,
     posterPath: "/similar/similar-1.jpg",
@@ -7,6 +8,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 2,
     type: "movie",
     rating: 9.2,
     posterPath: "/similar/similar-2.jpg",
@@ -14,6 +16,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 3,
     type: "movie",
     rating: 8.9,
     posterPath: "/similar/similar-3.jpg",
@@ -21,6 +24,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 4,
     type: "movie",
     rating: 9.0,
     posterPath: "/similar/similar-4.jpg",
@@ -28,6 +32,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 5,
     type: "movie",
     rating: 9.3,
     posterPath: "/similar/similar-5.jpg",
@@ -35,6 +40,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 6,
     type: "movie",
     rating: 8.7,
     posterPath: "/similar/similar-6.jpg",
@@ -42,6 +48,7 @@ export const similarItems = [
     route: "#",
   },
   {
+    id: 7,
     type: "movie",
     rating: 8.9,
     posterPath: "/similar/similar-7.jpg",

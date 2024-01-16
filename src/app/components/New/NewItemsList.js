@@ -13,7 +13,7 @@ const NewItemsList = () => {
 
       <Swiper spaceBetween={44} slidesPerView={3.7} grabCursor={true}>
         {newItems.map((item) => (
-          <SwiperSlide key={item.name}>
+          <SwiperSlide key={item.id}>
             <NewItem
               name={item.name}
               rating={item.rating}
