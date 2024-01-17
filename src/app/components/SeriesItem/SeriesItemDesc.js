@@ -9,7 +9,12 @@ const SeriesItemDesc = ({ mainDesc, warning }) => {
 
       <p className={styles.SeriesItemDesc__info}>{mainDesc}</p>
 
-      {warning && <WarningMessage />}
+      {warning && (
+        <WarningMessage
+          text="Контент может содержать сцены курения и употребления спиртных напитков.
+        Курение и чрезмерное употребление алкоголя вредит вашему здоровью."
+        />
+      )}
     </div>
   );
 };

@@ -2,14 +2,14 @@ import React from "react";
 import Warning from "./ActionIcons/Warning";
 import styles from "./WarningMessage.module.css";
 
-const WarningMessage = () => {
+const WarningMessage = ({ text, alignitems }) => {
+  let style = {};
+  alignitems ? (style = { alignItems: "center" }) : "";
+
   return (
-    <div className={styles.WarningMessage}>
+    <div style={style} className={styles.WarningMessage}>
       <Warning />
-      <p className={styles.WarningMessage__desc}>
-        Контент может содержать сцены курения и употребления спиртных напитков.
-        Курение и чрезмерное употребление алкоголя вредит вашему здоровью.
-      </p>
+      <p className={styles.WarningMessage__desc}>{text}</p>
     </div>
   );
 };

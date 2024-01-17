@@ -53,6 +53,8 @@
 }
 
 .NoSeries {
-  color: #4b4b4b;
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 425px;
 }

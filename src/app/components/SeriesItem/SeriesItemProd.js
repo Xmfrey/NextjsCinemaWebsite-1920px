@@ -7,6 +7,11 @@ import SeriesItemFooterInfo from "./SeriesItemFooterInfo";
 import SeriesItemSeasonsList from "./SeriesItemSeasonsList";
 
 const SeriesItemProd = () => {
+  let seasons = [];
+  seriesItems.map((item) => {
+    seasons = item.seasons;
+  });
+
   return (
     <div>
       {seriesItems.map((item) => (
@@ -24,7 +29,7 @@ const SeriesItemProd = () => {
             shortDesc={item.mainInfo.shortDescription}
           />
 
-          <SeriesItemSeasonsList />
+          <SeriesItemSeasonsList seasons={seasons} />
 
           <SeriesItemDesc
             mainDesc={item.mainDescription.Description}
