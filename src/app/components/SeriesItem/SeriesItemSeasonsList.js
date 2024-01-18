@@ -7,8 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const SeriesItemSeasonsList = ({ seasons }) => {
-  const [paginationActive, setPaginationActive] = useState(false);
-  const [seasonCurrent, setSeasonCurrent] = useState(null);
+  const [seasonCurrent, setSeasonCurrent] = useState(0);
 
   const seasonDisable = [styles.SeriesItemSeasonsList__seasonsButtons];
   const seasonActive = [
@@ -16,52 +15,7 @@ const SeriesItemSeasonsList = ({ seasons }) => {
     styles.active,
   ];
 
-  const seasonsActive = (seasonNumber) => {
-    setPaginationActive(true);
-    setSeasonCurrent(seasonNumber);
-  };
-
-  return !paginationActive ? (
-    <div className={styles.SeriesItemSeasonsList}>
-      <div className={styles.SeriesItemSeasonsList__title}>
-        <h2 className={styles.SeriesItemSeasonsList__Name}>Сезоны</h2>
-        <div className={styles.SeriesItemSeasonsList__seasons}>
-          {seasons.map((seas, index) => (
-            <button
-              onClick={() => seasonsActive(index)}
-              key={seas.season}
-              className={
-                seas.season === 1 ? seasonActive.join(" ") : seasonDisable
-              }
-            >
-              {seas.season}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <Swiper spaceBetween={20} slidesPerView={3} grabCursor={true}>
-        {seasons[0] && seasons[0].series ? (
-          seasons[0].series.map((seria) => (
-            <SwiperSlide key={seria.episodeNumber}>
-              <SeriesItemSeasonItem
-                seriesPreview={seria.seriesPreview}
-                episodeNumber={seria.episodeNumber}
-                episodeTime={seria.episodeTime}
-              />
-            </SwiperSlide>
-          ))
-        ) : (
-          <div className={styles.NoSeries}>
-            <WarningMessage
-              alignitems
-              text="Серии отсутствуют или еще не вышли в релиз."
-            />
-          </div>
-        )}
-      </Swiper>
-    </div>
-  ) : (
+  return (
     <div className={styles.SeriesItemSeasonsList}>
       <div className={styles.SeriesItemSeasonsList__title}>
         <h2 className={styles.SeriesItemSeasonsList__Name}>Сезоны</h2>
@@ -88,7 +42,7 @@ const SeriesItemSeasonsList = ({ seasons }) => {
         </div>
       </div>
 
-      <Swiper spaceBetween={20} slidesPerView={3} grabCursor={true}>
+      <Swiper spaceBetween={20} slidesPerView={3.05} grabCursor={true}>
         {seasons[seasonCurrent] && seasons[seasonCurrent].series ? (
           seasons[seasonCurrent].series.map((seria) => (
             <SwiperSlide key={seria.episodeNumber}>

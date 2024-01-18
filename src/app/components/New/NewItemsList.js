@@ -11,19 +11,21 @@ const NewItemsList = () => {
     <div className={styles.newItemsList}>
       <h2 className={styles.newItemsListName}>Новинки</h2>
 
-      <Swiper spaceBetween={44} slidesPerView={3.7} grabCursor={true}>
-        {newItems.map((item) => (
-          <SwiperSlide key={item.id}>
-            <NewItem
-              name={item.name}
-              rating={item.rating}
-              posterPath={item.posterPath}
-              posterAlt={item.posterAlt}
-              route={item.route}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={styles.newItemsList__swiperWrapper}>
+        <Swiper spaceBetween={44} slidesPerView={3.9} grabCursor={true}>
+          {newItems.map((item) => (
+            <SwiperSlide key={item.id}>
+              <NewItem
+                name={item.name}
+                rating={item.rating}
+                posterPath={item.posterPath}
+                posterAlt={item.posterAlt}
+                route={item.route}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

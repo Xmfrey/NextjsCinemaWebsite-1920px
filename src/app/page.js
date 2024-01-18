@@ -5,7 +5,7 @@ import MostPopularList from "./components/MostPopular/MostPopularList";
 
 const Home = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.Main}>
       <MainBlockHome />
       <NewItemsList />
       <MostPopularList />

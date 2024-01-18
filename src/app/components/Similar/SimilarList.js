@@ -11,7 +11,7 @@ const SimilarList = () => {
     <div className={styles.SimilarList}>
       <h2 className={styles.SimilarList__title}>Похожее</h2>
 
-      <Swiper spaceBetween={24} slidesPerView={6} grabCursor={true}>
+      <Swiper spaceBetween={24} slidesPerView={6.2} grabCursor={true}>
         {similarItems.map((item) => (
           <SwiperSlide key={item.id}>
             <SimilarItem

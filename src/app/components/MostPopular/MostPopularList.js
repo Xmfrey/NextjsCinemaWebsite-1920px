@@ -13,7 +13,7 @@ const MostPopularList = () => {
         <span>ТОП-10</span> просмотров за неделю
       </h2>
 
-      <Swiper spaceBetween={100} slidesPerView={2.7} grabCursor={true}>
+      <Swiper spaceBetween={100} slidesPerView={2.8} grabCursor={true}>
         {mostPopularItems.map((item) => (
           <SwiperSlide key={item.top}>
             <MostPopularItem
