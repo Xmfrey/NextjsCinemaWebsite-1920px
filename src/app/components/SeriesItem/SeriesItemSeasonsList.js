@@ -18,7 +18,7 @@ const SeriesItemSeasonsList = ({ seasons }) => {
   return (
     <div className={styles.SeriesItemSeasonsList}>
       <div className={styles.SeriesItemSeasonsList__title}>
-        <h2 className={styles.SeriesItemSeasonsList__Name}>Сезоны</h2>
+        <h2 className={styles.SeriesItemSeasonsList__name}>Сезоны</h2>
         <div className={styles.SeriesItemSeasonsList__seasons}>
           {seasons.map((seas, index) =>
             seas.season === seasonCurrent + 1 ? (
@@ -42,10 +42,18 @@ const SeriesItemSeasonsList = ({ seasons }) => {
         </div>
       </div>
 
-      <Swiper spaceBetween={20} slidesPerView={3.05} grabCursor={true}>
+      <Swiper
+        className={styles.SeriesItemSeasonsList__slider}
+        spaceBetween={20}
+        slidesPerView={"auto"}
+        grabCursor={true}
+      >
         {seasons[seasonCurrent] && seasons[seasonCurrent].series ? (
           seasons[seasonCurrent].series.map((seria) => (
-            <SwiperSlide key={seria.episodeNumber}>
+            <SwiperSlide
+              className={styles.SeriesItemSeasonsList__sliderItem}
+              key={seria.episodeNumber}
+            >
               <SeriesItemSeasonItem
                 seriesPreview={seria.seriesPreview}
                 episodeNumber={seria.episodeNumber}

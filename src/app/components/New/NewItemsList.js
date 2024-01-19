@@ -9,23 +9,29 @@ import "swiper/css";
 const NewItemsList = () => {
   return (
     <div className={styles.newItemsList}>
-      <h2 className={styles.newItemsListName}>Новинки</h2>
+      <h2 className={styles.newItemsList__title}>Новинки</h2>
 
-      <div className={styles.newItemsList__swiperWrapper}>
-        <Swiper spaceBetween={44} slidesPerView={3.9} grabCursor={true}>
-          {newItems.map((item) => (
-            <SwiperSlide key={item.id}>
-              <NewItem
-                name={item.name}
-                rating={item.rating}
-                posterPath={item.posterPath}
-                posterAlt={item.posterAlt}
-                route={item.route}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <Swiper
+        className={styles.newItemsList__slider}
+        spaceBetween={44}
+        slidesPerView={"auto"}
+        grabCursor={true}
+      >
+        {newItems.map((item) => (
+          <SwiperSlide
+            className={styles.newItemsList__sliderItem}
+            key={item.id}
+          >
+            <NewItem
+              name={item.name}
+              rating={item.rating}
+              posterPath={item.posterPath}
+              posterAlt={item.posterAlt}
+              route={item.route}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

@@ -7,3 +7,11 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
+
+.SimilarList__slider {
+  padding-right: 20px !important;
+}
+
+.SimilarList__sliderItem {
+  width: 263px !important;
+}

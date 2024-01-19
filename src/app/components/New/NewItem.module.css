@@ -1,9 +1,8 @@
-.newItem__wrapper {
+.newItem {
   display: inline-block;
-  margin-right: 30px;
 }
 
-.newItem {
+.newItem__content {
   position: relative;
   margin-bottom: 20px;
   padding: 4px;
@@ -20,7 +19,7 @@
   opacity: 0;
 }
 
-.newItem__wrapper:hover .newItem__opacity {
+.newItem:hover .newItem__opacity {
   opacity: 1;
 }
 

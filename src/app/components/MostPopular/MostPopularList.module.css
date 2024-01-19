@@ -21,3 +21,15 @@
   -moz-background-clip: text;
   -webkit-text-stroke: 4px transparent;
 }
+
+.mostPopularList__slider {
+  padding-right: 20px !important;
+}
+
+.mostPopularList__sliderItem {
+  width: 559px !important;
+}
+
+.mostPopularList__sliderItem:nth-child(1n + 10) {
+  width: 799px !important;
+}

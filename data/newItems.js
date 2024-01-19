@@ -35,4 +35,13 @@ export const newItems = [
     posterAlt: "Поймай меня, если сможешь",
     route: "#",
   },
+  {
+    id: 5,
+    name: "Синий жук",
+    type: "movie",
+    rating: 10,
+    posterPath: "/new/Card-5.jpg",
+    posterAlt: "Синий жук",
+    route: "#",
+  },
 ];
